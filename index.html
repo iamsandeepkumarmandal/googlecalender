@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Full Calender fullCalendar.io</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<html lang="en" xml:lang="en">
+	  <meta charset="utf-8">
+</head>
+
+<body>
+	<div class="mainwrapper block">
+		<section class="block leftside">
+			&nbsp;
+		</section>
+		<section class="block rightside">
+			<div id='calendar'></div>
+		</section>
+	</div>
+	<section class="schedule-event-popup-wrapper block displayflex transition schedule-event-popup-wrapper_js">
+		<div class="schedule-event-popup transition whitebg nopad col-lg-4 col-md-5 col-sm-6 col-xs-10">
+			<form data-toggle="validator" role="form" id="myForm">
+				<div class="title form-group nomargin flex sectionpadding5">
+					<i class="fa fa-circle" aria-hidden="true"></i>
+					<input id="text_topic" type="text" placeholder="Event Topic" class="form-control" data-minlength="6" required/>
+				</div>
+				<div class="dateandtime-wrapper sectionpadding5">
+					<div class="row flex justifycontent">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<div class="start-time block text-center">
+								<input id="txt_start_date" type="text" placeholder="Day and Date" value="" class="form-control cursorpointer" />
+								<input id="txt_start_time" type="text" placeholder="Time" value="" class="form-control cursorpointer" />
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+							<div class="block text-center">
+								<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+							<div class="end-time block text-center">
+								<input id="txt_end_date" type="text" placeholder="Day and Date" value="" class="form-control cursorpointer" />
+								<input id="txt_end_time" type="text" placeholder="Time" value="" class="form-control cursorpointer" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="location-wrapper block form-group nomargin sectionpadding5">
+					<label class="font_small">Location</label>
+					<input type="text" placeholder="Please Type a location" class="form-control" required />
+				</div>
+				<footer class="block text-right marginbottom15 sectionpadding5 lightgraybg">
+					<button type="button" class="btn btn-default btn-primary">Open in Scheduler</button>
+					<button type="button" class="btn btn-default btn-success">Schedule</button>
+				</footer>
+				<div class="closePopupEventsSchduler closePopupEventsSchduler_js">
+					<a class="cursorpointer transition">
+						X
+					</a>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<link href='resources/calender/css/fullcalendar.min.css' rel='stylesheet' />
+	<link href='resources/calender/css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="resources/datepicker/jquery.timepicker.css">
+	<link rel="stylesheet" href="resources/datepicker/datepicker/css/classic.css"/>
+	<link rel="stylesheet" href="resources/datepicker/datepicker/css/classic.date.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src='resources/calender/js/moment.min.js'></script>
+	<script src='resources/calender/js/jquery.min.js'></script>
+	<script src='resources/calender/js/fullcalendar.min.js'></script>
+	<script src="resources/datepicker/jquery.timepicker.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+	<script src="resources/datepicker/datepicker/js/picker.js"></script>
+	<script src="resources/datepicker/datepicker/js/picker.date.js"></script>
+	<script src="resources/datepicker/datepicker/js/legacy.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
